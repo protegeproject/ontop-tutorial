@@ -1,11 +1,13 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://protege.stanford.edu/ontologies/grocery-ontology/"
      xml:base="http://protege.stanford.edu/ontologies/grocery-ontology/"
-     xmlns:geo="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:grocery-ontology="http://protege.stanford.edu/ontologies/grocery-ontology/"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+     xmlns:wgs84_pos="http://www.w3.org/2003/01/geo/wgs84_pos#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/">
     <owl:Ontology rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology">
@@ -260,12 +262,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/BackToNatureFudgeMintCookiesItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FudgeMintCookie"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Delicious mint cookies wrapped in melt-in-your-mouth fudge</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-d2aa/k2-_510830e3-59ec-4b9a-8acc-1a9c375f55dc.v1.jpg"/>
     </owl:Class>
@@ -390,7 +386,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/CerealCruncyFlaxWithChia -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/CerealCruncyFlaxWithChia">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -490,7 +485,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/CinnamonHeavenCereal -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/CinnamonHeavenCereal">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -579,12 +573,6 @@
     
 
 
-    <!-- http://protege.stanford.edu/ontologies/grocery-ontology/Continent -->
-
-    <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/Continent"/>
-    
-
-
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/CornSyrup -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/CornSyrup">
@@ -615,12 +603,6 @@
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/CottonSeedOil">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/VegetableOil"/>
     </owl:Class>
-    
-
-
-    <!-- http://protege.stanford.edu/ontologies/grocery-ontology/Country -->
-
-    <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/Country"/>
     
 
 
@@ -748,12 +730,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/FamiliaSwissMuesliMixedCerealsItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/MuesliMixedCereals"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Since 1958, Bio-Familia has been using organically grown cereals and fruit in our products. A close relationship with Dr. Hans Muller, the pioneer of organic cultivation in Switzerland, made Bio-Familia one of the first companies to discover the benefit of growing grains that replenish and maintain healthy soil while eliminating toxic chemicals. Thanks to this experience and know how, Bio-Familia manufactures naturally grown cereal products that deliver outstanding taste and quality.</rdfs:comment>
         <foaf:depiction rdf:resource="http://www.images-iherb.com/l/FAL-01214-2.jpg"/>
     </owl:Class>
@@ -857,7 +833,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/FudgeMintCookie -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/FudgeMintCookie">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -927,7 +902,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/GeneralMillsCheerios -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/GeneralMillsCheerios">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -1050,12 +1024,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/GeneralMillsCheeriosItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GeneralMillsCheerios"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Cheerios Gluten Free Cereal contains 23 grams of whole grain per serving, At least 48 grams are recommended daily. A whole grain food is made by using all three parts of the grain. All General Mills Big G cereals contain more whole grain than any other single ingredient. Same Cheerios, simply gluten free. The taste you love has always come from oats that are naturally gluten free. We&apos;re simply making sure they stay that way. When Phil, a member of the Cheerios team for over 50 years, found out his daughter-in-law couldn&apos;t eat gluten, he knew his team had to find a way to make sure every family, including his, could share breakfast together. We know there are lots of families out there who don&apos;t want to let dietary restrictions get in the way of time together. Now that Cheerios are gluten free, more families than ever can sit down to share breakfast, and we couldn&apos;t be happier. After all, bringing families together around the breakfast table is exactly why we&apos;re here.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-b87d/k2-_b97ba71c-0cee-40e0-b19a-85ba3385fc0c.v3.jpg"/>
     </owl:Class>
@@ -1119,7 +1087,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/HeinzBeansWithTomatoSauce -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/HeinzBeansWithTomatoSauce">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -1170,12 +1137,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/HeinzBeansWithTomatoSauceItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/HeinzBeansWithTomatoSauce"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Heinz Beans with Tomato Sauce are premium vegetarian beans in a rich flavorful sauce that can be eaten as a side dish or by themselves. The beans with sauce are offered in a 13.7-oz can (pack of 12) for your convenience. Heinz beans are an excellent source of fiber, suitable for vegetarians and contain no artificial colors, preservatives or flavors. These Heinz Beans with Tomato Sauce contain no cholesterol.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-4da3/k2-_770ea72e-0e79-43e7-bd11-d8a30920230e.v1.jpg"/>
     </owl:Class>
@@ -1201,7 +1162,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/HoneyRiceCereal -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/HoneyRiceCereal">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -1289,7 +1249,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/KashiCrunchChocolateChipBar -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/KashiCrunchChocolateChipBar">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -1418,12 +1377,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/KashiCrunchChocolateChipBarItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/KashiCrunchChocolateChipBar"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Kashi Chocolate Chip Chia Crunchy Granola &amp; Seed Bars are delicious, all-natural snacks made with chia seeds and Kashi&apos;s unique whole grain blend with quinoa. Cultivated for thousands of years, chia seeds and quinoa are known for their delicious taste and nutritional benefits. Each two-bar serving contains 320mg of ALA omega-3--an essential fatty acid. And that&apos;s not all. Per serving, Chocolate Chip Chia bars contain: 23 grams whole grains; 3 grams fiber. Two easy-to-break bars equal four pieces per pouch. At Kashi, their mission is to change healthy eating from effort to enjoyment. For over 25 years, they&apos;ve been dedicated to making tasty, natural foods with positive nutrition and great taste. They leave out the artificial ingredients and leave in the good-for-you goodness, so you can snack with satisfaction and feel great about it.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-ef4b/k2-_4bbe7926-7d9d-4966-a805-8777a5e8a27f.v3.jpg"/>
     </owl:Class>
@@ -1441,7 +1394,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/LotusBiscoffCookies -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/LotusBiscoffCookies">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -1498,12 +1450,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/LotusBiscoffCookiesItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/LotusBiscoffCookies"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">For decades, Lotus Biscoff Cookies has been Europe&apos;s favorite cookie to enjoy with coffee. Their popularity in the U.S. spread when this crisp, delicious cookie began to be served on airplanes.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-6c5b/k2-_a59128ae-ad50-492a-930f-855b4cf4c6d6.v1.jpg"/>
     </owl:Class>
@@ -1529,7 +1475,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/MallomarsCookie -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/MallomarsCookie">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -1598,12 +1543,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/MallomarsCookiesPureChocolateItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/MallomarsCookie"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Nabisco Mallomars Pure Chocolate Cookies were created in 1913 and first sold to a grocer in West Hoboken, New Jersey. The metropolitan New York City area boasts the most loyal Mallomars fans. More than 70% of all Mallomars sales are generated in the shadow of the Big Apple</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-c301/k2-_b96d968b-2fd5-48cd-a3d0-e8e7f3bfc36f.v2.jpg"/>
     </owl:Class>
@@ -1686,7 +1625,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/MuesliMixedCereals -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/MuesliMixedCereals">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -1888,12 +1826,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/PepperidgeFarmTahoeWhiteChocolateMacademiaCookiesItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/WhiteChocolateMacademiaCookie"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">From your first bite, you&apos;ll see why Pepperidge Farm Tahoe White Chocolate Macadamia Cookies are a favorite among chocolate lovers. They make an ideal snack or tea-time treat. These delicious white chocolate chunk cookies contain an excellent blend of white chocolate and macadamia nuts.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-3904/k2-_8cafd179-4df3-4783-b9ae-cc4af302111e.v1.jpg"/>
     </owl:Class>
@@ -1905,12 +1837,6 @@
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/PeppermintOil">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/EssentialOil"/>
     </owl:Class>
-    
-
-
-    <!-- http://protege.stanford.edu/ontologies/grocery-ontology/Place -->
-
-    <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/Place"/>
     
 
 
@@ -2005,7 +1931,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/RiceKrispiesCereal -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/RiceKrispiesCereal">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -2516,7 +2441,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/WalkersShortbread -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/WalkersShortbread">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -2549,12 +2473,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/WalkersShortbreadItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/WalkersShortbread"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Walkers Shortbread Ltd has been granted a Royal Warrant of Appointment as suppliers of oatcakes to Her Majesty The Queen. Walkers is the only food company to have been awarded three times the Queens Award for Export. The granting of the Royal Warrant of Appointment by Her Majesty The Queen is a &apos;first&apos; for the family-owned firm which has traded from the Speyside village of Aberlour, Scotland for over a century. Product contains milk, wheat, and gluten. Not suitable for nut allergy sufferers.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-f1e6/k2-_a0841229-5e34-4ac7-9c83-a1b138ecbbf0.v1.jpg"/>
     </owl:Class>
@@ -2650,7 +2568,6 @@
     <!-- http://protege.stanford.edu/ontologies/grocery-ontology/WhiteChocolateMacademiaCookie -->
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/WhiteChocolateMacademiaCookie">
-        <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/FoodStuff"/>
         <rdfs:subClassOf>
             <owl:Restriction>
                 <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/hasIngredient"/>
@@ -2817,12 +2734,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/Barbara&apos;sPuffinsHoneyRiceCerealItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/HoneyRiceCereal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Balancing the crunchy, sweet goodness of toasted whole grain brown rice puffs and the rich, deep amber of real honey makes for a truly delicious cereal. Enjoy Barbara&apos;s Puffins Honey Rice Cereal.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-44d7/k2-_dbc394b9-ac91-4ea4-a57b-004df43cf4d0.v1.jpg"/>
     </owl:Class>
@@ -2833,12 +2744,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/EnjoyLifePerky&apos;sCerealCruncyFlaxWithChiaItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/CerealCruncyFlaxWithChia"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">Whole grains are packed with important nutrients to keep our hearts and bodies strong and lean. Most of us don&apos;t get enough. Aim for at least three servings a day. Did you know you can be well on your way to meeting this goal with only one bowl of Enjoy Life Perky&apos;s Crunchy Flax with Chia Cereal? It provides almost three servings of whole grain. Here are some quick facts about the many health benefits of chia. 1. High in fiber. Chia is high in fiber, helping you stay fuller, longer. 2. High in omega-3 essential fatty acids. Chia has more omega-3 fatty acids than any other plant food. 3. High in protein. Chia is great source of protein and antioxidants to help keep your body healthy and fit.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-8533/k2-_e9e5a22a-a630-4a62-95ed-0b981489628d.v1.jpg"/>
     </owl:Class>
@@ -2849,12 +2754,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/Kellog&apos;sRiceKrispiesCerealItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/RiceKrispiesCereal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">The classic taste of Kellogg&apos;s Rice Krispies Cereal is a guilt-free treat. Your family will enjoy the timeless taste of this toasted rice cereal that is deliciously fat free. Contains 10 essential vitamins and minerals per serving. Helps you start the day off right. Children will love the way it snaps, crackles and pops when added to milk. Only 3 grams of sugar per serving, allowing your family to enjoy a fun cereal and not overload on sugar. The simple crispy goodness of this wholesome cereal has made it a classic enjoyed by generations.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-4fef/k2-_184fd9df-82f8-4eb6-8d6b-0bcad35d99f8.v1.jpg"/>
     </owl:Class>
@@ -2873,12 +2772,6 @@
 
     <owl:Class rdf:about="http://protege.stanford.edu/ontologies/grocery-ontology/Van&apos;sGlutenFreeCinnamonHeavenCerealItem">
         <rdfs:subClassOf rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/GroceryItem"/>
-        <rdfs:subClassOf>
-            <owl:Restriction>
-                <owl:onProperty rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/containsFoodStuff"/>
-                <owl:someValuesFrom rdf:resource="http://protege.stanford.edu/ontologies/grocery-ontology/CinnamonHeavenCereal"/>
-            </owl:Restriction>
-        </rdfs:subClassOf>
         <rdfs:comment xml:lang="en">With 17 grams of nutrient-rich whole grains and five grams of fiber per serving, Van&apos;s Cinnamon Heaven Gluten Free Cereal is the perfect way to start your morning. Dip your spoon into a sweet touch of cinnamon and say hello to a whole new, whole grain way to start your mornings.</rdfs:comment>
         <foaf:depiction rdf:resource="http://ll-us-i5.wal.co/dfw/dce07b8c-69a7/k2-_43d4cfcf-fc82-44de-954c-72914746a6e0.v1.jpg"/>
     </owl:Class>

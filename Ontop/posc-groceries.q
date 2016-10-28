@@ -4,7 +4,7 @@ SELECT * WHERE {
    ?x a :WalkersShortbreadItem;
       :productName ?productName;
       :price ?price;
-      :isSoldBy ?store .
+      :isSoldByStore ?store .
 }
 
 [QueryItem="Example-02"]
