@@ -57,7 +57,7 @@ target		:{UPCA} a :MallomarsCookiesPureChocolateItem ; :productName {GROCERY_ITE
 source		select * from CATALOG where GROCERY_ITEM = 'Mallomars Cookies Pure Chocolate'
 
 mappingId	Pepperidge Macademia Cookies
-target		:{UPCA} a :PepperidgeFarmTahoeWhiteChocolateMacademiaCookiesItem ; :productName {GROCERY_ITEM} ; :price {PRICE} ; :isSoldByStore :{STORE_ID} . 
+target		:{UPCA} a :PepperidgeFarmTahoeWhiteChocolateMacadamiaCookiesItem ; :productName {GROCERY_ITEM} ; :price {PRICE} ; :isSoldByStore :{STORE_ID} . 
 source		select * from CATALOG where GROCERY_ITEM = 'Pepperidge Farm Tahoe White Chocolate Macademia Cookies'
 
 mappingId	Heinz Beans
