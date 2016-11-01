@@ -1,5 +1,5 @@
 [PrefixDeclaration]
-:		http://protege.stanford.edu/ontologies/grocery-ontology/
+:		http://protege.stanford.edu/ontologies/groceries/
 geo:		http://www.w3.org/2003/01/geo/wgs84_pos#
 owl:		http://www.w3.org/2002/07/owl#
 rdf:		http://www.w3.org/1999/02/22-rdf-syntax-ns#
