@@ -1,0 +1,7 @@
+Store
+	Costco
+	MollieStone
+	Safeway
+	WholeFoods
+	TraderJoe's
+
