@@ -4,4 +4,3 @@ Store
 	Safeway
 	WholeFoods
 	TraderJoe's
-
