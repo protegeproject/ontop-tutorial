@@ -110,6 +110,6 @@ WHERE {
       :isSoldByStore [
    	:storeName ?storeName;
          geo:lat ?lat;
-         geo:lon ?lon
+         geo:long ?long
       ] .
 }

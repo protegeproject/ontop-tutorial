@@ -49,15 +49,15 @@ target		:{UPCA} a :PepperidgeFarmTahoeWhiteChocolateMacadamiaCookiesItem ; :prod
 source		select * from CATALOG where GROCERY_ITEM = 'Pepperidge Farm Tahoe White Chocolate Macademia Cookies'
 
 mappingId	Safeway Store
-target		:{STORE_ID} a :Safeway ; :storeName {STORE_NAME} ; :address {STORE_ADDRESS} ; geo:lat {LAT}^^xsd:decimal ; geo:lon {LON}^^xsd:decimal . 
+target		:{STORE_ID} a :Safeway ; :storeName {STORE_NAME} ; :address {STORE_ADDRESS} ; geo:lat {LAT}^^xsd:decimal ; geo:long {LON}^^xsd:decimal . 
 source		select * from STORE where STORE_BRAND = 'Safeway'
 
 mappingId	Whole Foods Store
-target		:{STORE_ID} a :WholeFoods ; :storeName {STORE_NAME} ; :address {STORE_ADDRESS} ; geo:lat {LAT}^^xsd:decimal ; geo:lon {LON}^^xsd:decimal . 
+target		:{STORE_ID} a :WholeFoods ; :storeName {STORE_NAME} ; :address {STORE_ADDRESS} ; geo:lat {LAT}^^xsd:decimal ; geo:long {LON}^^xsd:decimal . 
 source		select * from STORE where STORE_BRAND = 'Whole Foods'
 
 mappingId	Costco Store
-target		:{STORE_ID} a :Costco ; :storeName {STORE_NAME} ; :address {STORE_ADDRESS} ; geo:lat {LAT}^^xsd:decimal ; geo:lon {LON}^^xsd:decimal . 
+target		:{STORE_ID} a :Costco ; :storeName {STORE_NAME} ; :address {STORE_ADDRESS} ; geo:lat {LAT}^^xsd:decimal ; geo:long {LON}^^xsd:decimal . 
 source		select * from STORE where STORE_BRAND = 'Costco'
 ]]
 
