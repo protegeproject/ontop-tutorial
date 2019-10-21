@@ -8,13 +8,6 @@ foaf:		http://xmlns.com/foaf/0.1/
 rdfs:		http://www.w3.org/2000/01/rdf-schema#
 skos:		http://www.w3.org/2004/02/skos/core#
 
-[SourceDeclaration]
-sourceUri	posc-groceries
-connectionUrl	jdbc:h2:tcp://localhost/./data/posc-groceries
-username	sa
-password	
-driverClass	org.h2.Driver
-
 [MappingDeclaration] @collection [[
 mappingId	Fudge Mint Cookies Mapping
 target		:{UPCA} a :BackToNatureFudgeMintCookiesItem ; :productName {GROCERY_ITEM} ; :price {PRICE} ; :isSoldByStore :{STORE_ID} . 
